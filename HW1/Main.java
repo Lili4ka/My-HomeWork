@@ -2,7 +2,7 @@ package HW1;
 
 public class Main {
     public static void main(String[] args) {
-        Product product = new Product();
+        Product product = new Product("Milk", "Prostokwasha", "UK", 450, 18);
 
         product.setType("Milk");
         System.out.println("type:" + product.getType());
