@@ -1,13 +1,11 @@
 package HW1;
 
-
 public class Product {
     protected String type;
     protected String brand;
     protected String manufacturer;
     protected int weight;
     protected int price;
-    protected int productLife;
 
 
     public String getType() {
@@ -60,19 +58,17 @@ public class Product {
         this.price = price;
 
     }
-    public int getProductLife() {
 
-        return productLife;
-    }
-
-    public void setProductLife(int productLife) {
-
-        this.productLife = productLife;
-
+    public Product(String type, String brand, String manufacturer, int weight, int price) {
+        this.type = type;
+        this.brand = brand;
+        this.manufacturer = manufacturer;
+        this.weight = weight;
+        this.price = price;
     }
 
     public String toString() {
-        String result = "Тип: " + this.type + "\nБренд: " + this.brand + "\nВиробник: " + this.manufacturer + "\nВага: " + this.weight +  "\nЦіна в гривнях : " + this.price + "\nТермін придатності: " + this.productLife;
+        String result = "Тип: " + this.type + "\nБренд: " + this.brand + "\nВиробник: " + this.manufacturer + "\nВага: " + this.weight +  "\nЦіна в гривнях : " + this.price;
         return result;
     }
 }
